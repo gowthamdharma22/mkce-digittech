@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: linear-gradient(90deg, #effaff 0%, #d9e7ff 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section{
+  height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home{
+  height: 80vh;
+}
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+}
+
+.left {
+  margin: 8rem;
+  margin-top: 8rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.left_gif {
+  width: 35vw;
+  margin-top: 3rem;
+  margin-right: 6rem;
+}
+
+.sol {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+#nav-btn {
+  margin-right: 20px;
+}
+
+.btn {
+  background-color: #0E7490;
   color: white;
+  border-radius: 0.7rem;
+  padding: 0.8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: white;
+  color: #0E7490;
+  padding: 0.7rem;
+  border: 2px solid #0E7490;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mar {
+  margin-bottom: 20rem;
 }
+
+
+@media screen and (max-width:880px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .home{
+    height: 70vh;
+  }
+
+  .left {
+    margin: 1rem;
+    margin-top: 5rem;
+  }
+
+  .left {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
+
+  .left_gif {
+    width: 70vw;
+    position: relative;
+    left: 13%;
+    bottom: 3rem;
+    transform: (-50%, -50%);
+  }
+
+}
+
+@media screen and (max-width:545px) {
+  .home{
+  height: 100vh;
+}
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav-tit {
+    font-size: 1rem;
+  }
+
+  .sol {
+    font-size: 0.7rem;
+  }
+
+  .left_gif {
+    width: 70vw;
+    position: relative;
+    top: 40%;
+    left: 14%;
+    transform: (-50%, -50%);
+  }
+
+  #nav-btn {
+    display: none;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+}
+
+
+/* About */
+
+

@@ -1,0 +1,110 @@
+.abt-main{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .abt-left{
+    margin: 8rem;
+    margin-top: 8rem;
+  }
+  .abt-logo {
+    margin-bottom: 20px;
+  }
+  
+  .abt-h2 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+  
+  .abt-title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .abt-desc {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .caro {
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 500px;
+    height: 35rem;
+  }
+  .caro-img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .abt-right {
+    width: 50%;
+    margin-top: 80px;
+    position: relative;
+    bottom: 3rem;
+    transform: (-50%, -50%);
+  }
+  
+  @media screen and (max-width:1150px) {
+    
+    .abt-right {
+      width: 50%;
+      margin-top: 80px;
+      position: relative;
+      left: -50px;
+      bottom: 3rem;
+      transform: (-50%, -50%);
+    }
+    .caro {
+      margin-top: 100px;
+      margin-right: 100px;
+      width: 400px;
+      height: 28rem;
+    }
+  }
+  @media screen and (max-width:900px) {
+    
+    .abt-main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .abt-left{
+      width: 90vw;
+      margin-bottom: -6rem;
+    }
+    .abt-logo{
+      position: relative;
+      left: 40%;
+    }
+    .abt-right{
+      left: 0px;
+    }
+  }
+  @media screen and (max-width:550px){
+    
+    .abt-right{
+      left: -50px;
+    }
+  }
+  @media screen and (max-width:480px){
+    
+    .abt-logo{
+      position: relative;
+      left: 30%;
+    }
+    .abt-right{
+      left: -40px;
+    }
+    .caro{
+      width: 300px;
+      height: 25rem;
+    }
+  }
+  @media screen and (max-width:380px){
+    .abt-right{
+      left: -60px;
+    }
+  }

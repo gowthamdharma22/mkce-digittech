@@ -1,0 +1,123 @@
+.top {
+    position: relative;
+    top: 18%;
+    margin: 2rem;
+    margin-left: 8rem;
+}
+
+.tit {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3rem;
+    width: 800px;
+}
+
+.cont {
+    display: flex;
+    position: relative;
+    top: 9rem;
+    justify-content: space-between;
+}
+
+.lef {
+    margin-left: 10rem;
+}
+
+.conta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    height: 400px;
+    margin: 2rem;
+}
+.h3{
+    font-weight: 900;
+}
+.card{
+    background-color: transparent;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+@media screen and (max-width:1110px){
+    .top,.tit{
+        width: 90%;
+        font-size: 2.5rem;
+        top: 30%;
+    }
+    .lef {
+        margin-top: 5rem;
+    }
+}
+@media screen and (max-width:1050px){
+    .top,.tit{
+        width: 80%;
+        font-size: 2.3rem;
+        margin-top: 20%;
+    }
+    .cont{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:800px){
+    .top,.tit{
+        width: 80%;
+        font-size: 2.3rem;
+        margin-top: 40%;
+        text-align: center;
+    }
+    .lef{
+        align-items: center;
+    }
+}
+@media screen and (max-width:680px){
+    .top,.tit{
+        width: 75%;
+        font-size: 2.3rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width:500px){
+    .top{
+        width: 85vw;
+        font-size: 2rem;
+        margin-left: 70px;
+        align-items: center;
+    }
+    .tit{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .conta{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .lef {
+        margin-left: 3rem;
+    }
+}
+@media screen and (max-width:400px){
+    .top{
+        width: 75vw;
+        font-size: 2rem;
+        margin-left: 83px;
+        align-items: center;
+    }
+    .conta{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:350px){
+    .top{
+        width: 77vw;
+        font-size: 2rem;
+        margin-left: 85px;
+        align-items: center;
+    }
+    .conta{
+        margin-bottom: 20px;
+    }
+}
