@@ -1,9 +1,0 @@
-.nav{
-    border-bottom: 1px solid rgb(209, 209, 209);
-    margin-bottom: 50px;
-}
-.navv{
-    width: 100vw;
-    position: fixed;
-    z-index: 2;
-}
