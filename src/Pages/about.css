@@ -1,0 +1,12 @@
+.jumbotron {
+  background-image: url(https://21645388.fs1.hubspotusercontent-na1.net/hubfs/21645388/banner-six.webp);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 60px;
+}
+.container {
+  color: white;
+}
+.desci {
+  display: flex;
+}
